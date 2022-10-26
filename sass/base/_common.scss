@@ -2,8 +2,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  background-color: var(--primary-white-color);
+  color: $primary-text-color;
+  background-color: $primary-white-color;
 }
 
 .list {

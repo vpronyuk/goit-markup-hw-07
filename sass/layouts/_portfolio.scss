@@ -12,9 +12,9 @@
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: inherit;
-  color: var(--primary-title-color);
+  color: $primary-title-color;
   text-align: center;
-  background-color: var(--grey-bg-color);
+  background-color: $grey-bg-color;
   cursor: pointer;
   border-color: transparent;
   border-radius: 4px;
@@ -25,8 +25,8 @@
 
   &:hover,
   &:focus {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
+    color: $primary-white-color;
+    background-color: $accent-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
@@ -48,7 +48,7 @@
   color: inherit;
   text-decoration: none;
 
-  transition: box-shadow var(--transition-default);
+  transition: box-shadow $transition-default;
 
   &:hover,
   &:focus {
@@ -63,7 +63,7 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--primary-title-color);
+  color: $primary-title-color;
   text-decoration: none;
 }
 
@@ -75,14 +75,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    color: var(--primary-white-color);
+    color: $primary-white-color;
     font-size: 18px;
     line-height: 1.56;
     background-color: rgba(33, 150, 243, 0.9);
     padding: 63px 24px;
     height: 100%;
     transform: translateY(100%);
-    transition: transform var(--transition-default);
+    transition: transform $transition-default;
     overflow: auto;
 
     .cards__link:hover &,
@@ -94,9 +94,9 @@
 
 .cards__content {
   padding: 20px 24px;
-  border-right: 1px solid var(--cards-border-color);
-  border-bottom: 1px solid var(--cards-border-color);
-  border-left-style: 1px solid var(--cards-border-color);
+  border-right: 1px solid $cards-border-color;
+  border-bottom: 1px solid $cards-border-color;
+  border-left-style: 1px solid $cards-border-color;
 }
 
 .cards__thumb {

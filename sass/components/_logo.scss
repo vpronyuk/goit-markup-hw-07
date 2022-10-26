@@ -4,14 +4,14 @@
   font-size: 26px;
   line-height: 1.19;
 
-  color: var(--accent-color);
+  color: $accent-color;
   text-decoration: none;
 
   &--black {
-    color: var(--second-logo-color);
+    color: $second-logo-color;
   }
 
   &--white {
-    color: var(--primary-white-color);
+    color: $primary-white-color;
   }
 }

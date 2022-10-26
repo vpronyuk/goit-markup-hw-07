@@ -4,8 +4,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--transition-default),
-    visibility var(--transition-default);
+  transition: opacity $transition-default, visibility $transition-default;
 }
 
 .modal {
@@ -23,7 +22,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  transition: transform var(--transition-default);
+  transition: transform $transition-default;
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(1.5);
@@ -46,15 +45,12 @@
   padding: 0;
   cursor: pointer;
 
-  transition: fill var(--transition-default);
+  transition: fill $transition-default;
 
   &:hover,
   &:focus {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
-}
-
-.modal__form {
 }
 
 .modal__title {
@@ -67,7 +63,7 @@
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-title-color);
+  color: $primary-title-color;
 }
 
 .modal__item {
@@ -82,7 +78,7 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 
 .modal__content {
@@ -95,10 +91,10 @@
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: outline-color var(--transition-default);
+  transition: outline-color $transition-default;
 
   &:focus {
-    outline-color: var(--accent-color);
+    outline-color: $accent-color;
   }
 }
 
@@ -108,11 +104,11 @@
   left: 12px;
   transform: translateY(-50%);
 
-  transition: fill var(--transition-default);
+  transition: fill $transition-default;
 }
 
 .modal__input:focus + .modal__icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .comment__area {
@@ -126,14 +122,14 @@
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: outline-color var(--transition-default);
+  transition: outline-color $transition-default;
 
   &:focus {
-    outline-color: var(--accent-color);
+    outline-color: $accent-color;
   }
 
   &:focus::placeholder {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 
   &::placeholder {
@@ -141,15 +137,12 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-    transition: color var(--transition-default);
+    transition: color $transition-default;
   }
 }
 
-.policy__input {
-}
-
 .policy__label {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   line-height: 1.71;
   display: flex;
   align-items: center;
@@ -158,32 +151,32 @@
   span {
     width: 16px;
     height: 15px;
-    border: 2px solid var(--primary-title-color);
+    border: 2px solid $primary-title-color;
     border-radius: 2px;
     margin-right: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
-    transition: fill var(--transition-default);
-    transition: background-color var(--transition-default);
-    transition: border-color var(--transition-default);
+    transition: fill $transition-default;
+    transition: background-color $transition-default;
+    transition: border-color $transition-default;
   }
 }
 
 .policy__link {
-  color: var(--accent-color);
+  color: $accent-color;
   text-decoration: underline;
 }
 
 .policy__input:checked + .policy__label span {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   border-color: transparent;
-  fill: var(--primary-white-color);
+  fill: $primary-white-color;
 }
 
 .policy__input:focus + .policy__label span {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .modal__fbutton {
@@ -199,19 +192,19 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
 
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  color: $primary-white-color;
+  background-color: $accent-color;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
 
   cursor: pointer;
-  transition: background-color var(--transition-default);
+  transition: background-color $transition-default;
 
   &:hover,
   &:focus {
-    background-color: var(--interactive-btn-color);
+    background-color: $interactive-btn-color;
   }
 }
 

@@ -1,12 +1,3 @@
-.clients__title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  color: var(--primary-title-color);
-  text-align: center;
-}
-
 .clients__list {
   display: flex;
   gap: 30px;
@@ -15,27 +6,27 @@
 .clients__link {
   width: 170px;
   height: 92px;
-  border: 1px solid var(--grey-soc-item-color);
+  border: 1px solid $grey-soc-item-color;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  transition: border-color var(--transition-default);
+  transition: border-color $transition-default;
 
   &:hover,
   &:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
   }
 }
 
 .clients__icon {
-  fill: var(--grey-soc-item-color);
+  fill: $grey-soc-item-color;
 
-  transition: fill var(--transition-default);
+  transition: fill $transition-default;
 
   .clients__link:hover &,
   .clients__link:focus & {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 }

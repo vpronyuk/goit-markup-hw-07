@@ -9,7 +9,7 @@
   content: "";
   height: 120px;
 
-  background-color: var(--grey-bg-color);
+  background-color: $grey-bg-color;
   background-size: 70px 70px;
   background-repeat: no-repeat;
   background-position: center;
@@ -38,7 +38,7 @@
   font-size: inherit;
   line-height: 1.14;
 
-  color: var(--primary-title-color);
+  color: $primary-title-color;
   text-transform: uppercase;
 }
 

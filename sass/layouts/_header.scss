@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.header-nav {
+.menu {
   margin-left: 93px;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@
   }
 }
 
-.active-page {
+.menu__link--active {
   position: relative;
   color: $accent-color;
 
@@ -51,13 +51,13 @@
   }
 }
 
-.header-adress {
+.connect {
   display: flex;
   gap: 50px;
   margin-left: auto;
 }
 
-.header-adress__link {
+.connect__link {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -78,14 +78,14 @@
   }
 }
 
-.header-address__icon {
+.connect__icon {
   margin-right: 10px;
   fill: currentColor;
 
   transition: fill $transition-default;
 
-  .header-adress__link:hover &,
-  .header-adress__link:focus & {
+  .connect__link:hover &,
+  .connect__link:focus & {
     fill: $accent-color;
   }
 }

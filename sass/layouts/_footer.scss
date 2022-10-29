@@ -4,32 +4,11 @@
   padding-bottom: 60px;
 }
 
-.footer__content {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer__left {
-  margin-right: 70px;
-}
-
-.footer__right {
-  margin-right: 93px;
-}
-
-.footer__list {
-  margin-bottom: 9px;
-}
-
-.footer__list:last-child {
-  margin-bottom: 0;
-}
-
 .address {
   margin-top: 20px;
 }
 
-.footer__link {
+.address__link {
   display: block;
   font-style: normal;
   line-height: 1.71;
@@ -38,6 +17,14 @@
   text-decoration: none;
 
   transition: color $transition-default;
+}
+
+.footer__list {
+  margin-bottom: 9px;
+}
+
+.footer__list:last-child {
+  margin-bottom: 0;
 }
 
 .footer__map {
@@ -51,14 +38,28 @@
   transition: color $transition-default;
 }
 
-.footer__link:hover,
-.footer__link:focus,
+.address__link:hover,
+.address__link:focus,
 .footer__map:hover,
 .footer__map:focus {
   color: $accent-color;
 }
 
-.footer__title {
+.footer__content {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__left-side {
+  margin-right: 70px;
+}
+
+.footer__right-side {
+  margin-right: 93px;
+}
+
+.follow__title {
+  margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -66,35 +67,7 @@
   color: $primary-white-color;
 }
 
-.fsoc__list {
-  display: flex;
-  margin-top: 20px;
-  gap: 10px;
-  justify-content: center;
-}
-
-.fsoc__link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.1);
-
-  transition: background-color $transition-default;
-}
-
-.fsoc__icon {
-  fill: $primary-white-color;
-}
-
-.fsoc__link:hover,
-.fsoc__link:focus {
-  background-color: $accent-color;
-}
-
-.footer__form {
+.form {
   color: $primary-white-color;
 }
 
@@ -130,17 +103,17 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.button__icon {
+.btn__icon {
   margin-left: 10px;
   fill: currentColor;
 }
 
-.footer__button {
+.input__btn {
   display: flex;
   align-items: baseline;
 }
 
-.form__button {
+.form__btn {
   margin-left: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -164,7 +137,7 @@
   transition: background-color $transition-default;
 }
 
-.footer-form-btn:hover,
-.footer-form-btn:focus {
+.form__btn:hover,
+.form__btn:focus {
   background-color: $interactive-btn-color;
 }

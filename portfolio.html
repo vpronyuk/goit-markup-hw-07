@@ -24,23 +24,25 @@
   <body>
     <header class="header">
       <div class="container header__section">
-        <a class="logo" href="./index.html"
-          >Web<span class="logo--black">Studio</span></a
+        <a class="logo header__logo" href="./index.html"
+          >Web<span class="logo__decor--dark">Studio</span></a
         >
-        <nav>
+        <nav class="navigation">
           <ul class="menu list">
-            <li><a class="menu__link" href="./index.html">Студія</a></li>
             <li>
-              <a class="menu__link menu__link--active" href="./portfolio.html"
+              <a class="menu__item" href="./index.html">Студія</a>
+            </li>
+            <li>
+              <a class="menu__item menu__item--active" href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
-            <li><a class="menu__link" href="">Контакти</a></li>
+            <li><a class="menu__item" href="#">Контакти</a></li>
           </ul>
         </nav>
         <ul class="connect list">
           <li>
-            <a class="connect__link" href="mailto:info@devstudio.com">
+            <a class="connect__item" href="mailto:info@devstudio.com">
               <svg class="connect__icon" width="16" height="12">
                 <use
                   href="./images/index-page-img/icon.svg#icon-envelope"
@@ -50,7 +52,7 @@
             >
           </li>
           <li>
-            <a class="connect__link" href="tel:+380961111111">
+            <a class="connect__item" href="tel:+380961111111">
               <svg class="connect__icon" width="10" height="16">
                 <use
                   href="./images/index-page-img/icon.svg#icon-smartphone"
@@ -63,10 +65,10 @@
     </header>
 
     <main>
-      <section class="portfolio section">
+      <section class="portfolio-page section">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
-          <ul class="list radiobutton__list">
+          <ul class="list radiobutton__list radiobutton__splitter">
             <li>
               <button class="radiobutton__item" type="button">Усі</button>
             </li>
@@ -83,7 +85,7 @@
               <button class="radiobutton__item" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="list portfolio__cards">
+          <ul class="list cards__position">
             <li class="cards__item">
               <a
                 class="cards__link"
@@ -325,15 +327,15 @@
 
     <footer class="footer">
       <div class="container footer__content">
-        <div class="footer__left">
+        <div class="footer__left-side">
           <a class="logo" href="./index.html"
-            >Web<span class="logo--white">Studio</span></a
+            >Web<span class="logo__decor--light">Studio</span></a
           >
           <address class="address">
             <ul class="list">
               <li class="footer__list">
                 <a
-                  class="footer__link"
+                  class="address__link"
                   href="https://goo.gl/maps/wRLRJnmAtBPPjTjs9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
@@ -343,12 +345,12 @@
                 >
               </li>
               <li class="footer__list">
-                <a class="footer__link" href="mailto:info@devstudio.com"
+                <a class="address__link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="footer__list">
-                <a class="footer__link" href="tel:+380961111111"
+                <a class="address__link address__tel" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -356,39 +358,39 @@
           </address>
         </div>
 
-        <div class="footer__right">
-          <p class="footer__title">приєднуйтесь</p>
-          <ul class="fsoc__list">
-            <li>
-              <a class="fsoc__link" href="#">
-                <svg class="fsoc__icon" width="20" height="20">
+        <div class="footer__right-side">
+          <p class="follow__title">приєднуйтесь</p>
+          <ul class="soc__list">
+            <li class="soc__item">
+              <a class="soc__link soc__link--dark" href="#">
+                <svg class="soc__icon soc__icon--light" width="20" height="20">
                   <use
                     href="./images/index-page-img/icon.svg#icon-instagram"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="fsoc__link" href="#">
-                <svg class="fsoc__icon" width="20" height="20">
+            <li class="soc__item">
+              <a class="soc__link soc__link--dark" href="#">
+                <svg class="soc__icon soc__icon--light" width="20" height="20">
                   <use
                     href="./images/index-page-img/icon.svg#icon-twitter"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="fsoc__link" href="#">
-                <svg class="fsoc__icon" width="20" height="20">
+            <li class="soc__item">
+              <a class="soc__link soc__link--dark" href="#">
+                <svg class="soc__icon soc__icon--light" width="20" height="20">
                   <use
                     href="./images/index-page-img/icon.svg#icon-facebook"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="fsoc__link" href="#">
-                <svg class="fsoc__icon" width="20" height="20">
+            <li class="soc__item">
+              <a class="soc__link soc__link--dark" href="#">
+                <svg class="soc__icon soc__icon--light" width="20" height="20">
                   <use
                     href="./images/index-page-img/icon.svg#icon-linkedin"
                   ></use>
@@ -397,22 +399,22 @@
             </li>
           </ul>
         </div>
-        <div class="footer__form">
-          <form>
-            <label class="form__label" for="footer__mail"
+        <div class="form">
+          <form class="form__content">
+            <label class="form__label" for="footer-mail"
               >Підпишіться на розсилку</label
             >
-            <div class="footer__button">
+            <div class="input__btn">
               <input
                 class="form__input"
                 type="email"
-                name="footer__mail"
-                id="footer__mail"
+                name="footer-mail"
+                id="footer-mail"
                 placeholder="E-mail"
               />
-              <button class="form__button" type="submit">
+              <button class="form__btn" type="submit">
                 Підписатися
-                <svg class="button__icon" width="24" height="24">
+                <svg class="btn__icon" width="24" height="24">
                   <use
                     href="./images/index-page-img/icon.svg#icon-footer-btn-send"
                   ></use>

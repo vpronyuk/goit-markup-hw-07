@@ -7,11 +7,15 @@
   color: $accent-color;
   text-decoration: none;
 
-  &--black {
+  &__decor--dark {
     color: $second-logo-color;
   }
 
-  &--white {
+  &__decor--light {
     color: $primary-white-color;
   }
+}
+
+.header__logo {
+  margin-right: 93px;
 }

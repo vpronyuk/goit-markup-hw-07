@@ -2,53 +2,51 @@
   border-bottom: 1px solid #ececec;
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
 .header__section {
   display: flex;
   align-items: center;
 }
+.menu__item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-.menu {
-  margin-left: 93px;
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
-  &__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+  color: $primary-title-color;
+  text-decoration: none;
 
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    color: $primary-title-color;
-    text-decoration: none;
-
-    transition: color $transition-default;
-
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
-  }
+  transition: color $transition-default;
 }
 
-.menu__link--active {
+.menu__item--active {
   position: relative;
   color: $accent-color;
+}
 
-  &::after {
-    position: absolute;
-    bottom: -1px;
-    content: "";
-    display: block;
+.menu__item--active::after {
+  position: absolute;
+  bottom: -1px;
+  content: "";
+  display: block;
 
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: $accent-color;
-  }
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $accent-color;
+}
+
+.menu__item:hover,
+.menu__item:focus {
+  color: $accent-color;
 }
 
 .connect {
@@ -57,7 +55,7 @@
   margin-left: auto;
 }
 
-.connect__link {
+.connect__item {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -71,11 +69,6 @@
   text-decoration: none;
 
   transition: color $transition-default;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
 }
 
 .connect__icon {
@@ -83,9 +76,14 @@
   fill: currentColor;
 
   transition: fill $transition-default;
+}
 
-  .connect__link:hover &,
-  .connect__link:focus & {
-    fill: $accent-color;
-  }
+.connect__item:hover,
+.connect__item:focus {
+  color: $accent-color;
+}
+
+.connect__item:hover .connect__icon,
+.connect__item:focus .connect__icon {
+  fill: $accent-color;
 }

@@ -1,14 +1,16 @@
-@import "./utils/vars";
+@import "./utils/variables";
 @import "./base/reset";
 @import "./base/common";
 @import "./utils/visually-hidden";
 
 @import "./components/container";
 @import "./components/section";
-@import "./components/modal";
 @import "./components/logo";
 @import "./components/title";
-@import "./components/main-btn";
+@import "./components/modal";
+@import "./components/social";
+@import "./components/radiobutton";
+@import "./components/cards";
 
 @import "./layouts/header";
 @import "./layouts/hero";

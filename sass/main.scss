@@ -3,22 +3,22 @@
 @import "./base/common";
 @import "./utils/visually-hidden";
 
-@import "./components/container";
-@import "./components/section";
-@import "./components/logo";
-@import "./components/title";
-@import "./components/modal";
-@import "./components/social";
-@import "./components/radiobutton";
-@import "./components/cards";
-@import "./components/close-btn";
-@import "./components/submit-btn";
-
+@import "./layouts/container";
+@import "./layouts/section";
+@import "./layouts/logo";
+@import "./layouts/title";
+@import "./layouts/social";
+@import "./layouts/radiobutton";
+@import "./layouts/cards";
+@import "./layouts/close-btn";
+@import "./layouts/submit-btn";
 @import "./layouts/header";
-@import "./layouts/hero";
-@import "./layouts/feature";
-@import "./layouts/activity";
-@import "./layouts/team";
-@import "./layouts/clients";
 @import "./layouts/footer";
-@import "./layouts/portfolio";
+
+@import "./components/modal";
+@import "./components/hero";
+@import "./components/feature";
+@import "./components/activity";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/portfolio";

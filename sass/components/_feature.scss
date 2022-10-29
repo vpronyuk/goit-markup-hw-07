@@ -1,3 +1,8 @@
+.feature__list {
+  display: flex;
+  gap: 30px;
+}
+
 .feature__item::before {
   margin-bottom: 30px;
   display: block;
@@ -39,9 +44,5 @@
 
 .feature__text {
   line-height: 1.71;
-}
-
-.feature__list {
-  display: flex;
-  gap: 30px;
+  max-width: 270px;
 }

@@ -112,26 +112,6 @@ img {
   transform: translate(-50%, -50%) scale(1.5);
 }
 
-.feedback__close-btn {
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.feedback__close-btn:hover, .feedback__close-btn:focus {
-  fill: #2196f3;
-}
-
 .feedback__title {
   width: 100%;
   margin-bottom: 12px;
@@ -269,30 +249,6 @@ img {
   border-color: #2196f3;
 }
 
-.feedback__btn {
-  margin: 0 auto;
-  margin-top: 30px;
-  padding: 10px 52px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-color: transparent;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.feedback__btn:hover, .feedback__btn:focus {
-  background-color: #188ce8;
-}
-
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -416,6 +372,50 @@ img {
 }
 .cards__link:hover .cards__text--overlay, .cards__link:focus .cards__text--overlay {
   transform: translateY(0);
+}
+
+.btn--close {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn--close:hover, .btn--close:focus {
+  fill: #2196f3;
+}
+
+.btn--submit {
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn--submit:hover, .btn--submit:focus {
+  background-color: #188ce8;
 }
 
 .header {
